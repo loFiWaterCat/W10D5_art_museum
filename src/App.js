@@ -1,9 +1,10 @@
 import harvardArt from './data/harvardArt';
+import GalNav from './components/GalleryNavigation';
 
 
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <GalNav galleries={harvardArt.records} />
   );
 }
 
