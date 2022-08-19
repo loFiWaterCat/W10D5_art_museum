@@ -1,15 +1,17 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import './GalleryNavigation.css';
 
 function GalleryNavigation({ galleries }) {
     return (
         <nav>
         <h1>Galleries {console.log(galleries)}</h1>
-        <NavLink to="/">Home</NavLink>
+        <NavLink exact to="/">Home</NavLink>
         {
             galleries.map(gallery => {
                 const galleryId = "/galleries/" + gallery.id;
-                return <NavLink to={galleryId}>{gallery.name}</NavLink>
+                return <NavLink key={gallery.id} to={galleryId}>{gallery.name}
+          </NavLink>
 })
         }
         </nav>
