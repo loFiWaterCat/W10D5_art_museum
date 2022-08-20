@@ -9,8 +9,7 @@ import { Switch } from 'react-router';
 function App() { 
   return (
     // <Router>
-
-      <div className="pagina-wrapper">
+      <div className="page-wrapper">
         <GalNav galleries={harvardArt.records} />
         <Switch>
         <Route path="/galleries/:galleryId">
