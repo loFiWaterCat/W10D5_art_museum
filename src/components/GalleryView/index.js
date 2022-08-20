@@ -12,6 +12,7 @@ const GalleryView = ({ galleries }) => {
     <>
       <h2>{gallery.name}</h2>
       <Route exact path="/galleries/:galleryId/">
+        <p>{gallery.labeltext}</p>
       <div id="pic-grid">
       {
         gallery.objects.map(obj => {
@@ -29,7 +30,6 @@ const GalleryView = ({ galleries }) => {
         <ArtDesc gallery={gallery} />
       </Route>
       
-      <p>{gallery.labeltext}</p>
       
     </>
 

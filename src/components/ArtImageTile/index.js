@@ -9,7 +9,7 @@ const ArtImage = ({ pic , galleryId }) => {
   let urlpath = `/galleries/${galleryId}/art/${artId}`;
   return (
     <Link to={urlpath}>
-      <img src={pic.images[0].baseimageurl } alt="" />
+      <img src={pic.images[0].baseimageurl } alt={pic.images[0].alttext} />
     </Link>
   )
 }
