@@ -1,0 +1,8 @@
+#pic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.picture {
+    width: 12vw;
+}

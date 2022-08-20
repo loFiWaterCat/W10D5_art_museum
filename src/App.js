@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/">
           <h2>Harvard Art Museum</h2>
           <p>Look, but Don't Touch. Please select a Gallery in the navigation bar.
-            You break, you pay!
+            You break, you pay!{console.log(harvardArt.records)}
           </p>
         </Route>
         <Route>
