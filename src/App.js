@@ -9,7 +9,8 @@ import { Switch } from 'react-router';
 function App() { 
   return (
     // <Router>
-      <Router>
+
+      <div className="page-wrapper">
         <GalNav galleries={harvardArt.records} />
         <Switch>
         <Route path="/galleries/:galleryId">
@@ -24,7 +25,7 @@ function App() {
         <Route>
           <p>Page not found Four Oh Four. You may want to try the gallery at BU</p>
         </Route>
-        </Router>
+        </Switch>
 
       </div>
     // </Router>
