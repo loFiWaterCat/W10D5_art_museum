@@ -10,7 +10,7 @@ function App() {
   return (
     // <Router>
 
-      <div className="page-wrapper">
+      <div className="pagina-wrapper">
         <GalNav galleries={harvardArt.records} />
         <Switch>
         <Route path="/galleries/:galleryId">
